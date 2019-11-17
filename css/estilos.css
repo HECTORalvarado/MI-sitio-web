@@ -10,6 +10,7 @@
 
 :root {
 	--color-principal: #2478a0;
+    --dark-version: #164d72;
 }
 
 /* parrafos */
@@ -70,6 +71,15 @@ nav {
 	display: inline-block;
 }
 
+#menu_btn {
+    display: none;
+}
+
+.menu {
+    color: var(--color-principal);
+    display: none;
+}
+
 nav a {
 	display: inline-block;
 	background: #fff;
@@ -82,23 +92,22 @@ nav a {
 }
 
 nav a:hover {
-	color: #164d72;
+	color: var(--dark-version);
 	transform: scale(1.1);
 }
 
 /* Estilos seccion principal */
 
 main {
-	width: 90%;
-	margin: 0px auto;
-	margin-top: 150px;
+	width: 100%;
+	margin: 150px 0px;
 	clear: both;
 }
 
 /* estilos articles*/
 
 article {
-    width: 100%;
+    width: 90%;
     margin: 0px auto;
     padding: 10px;
     text-align: center;
@@ -128,6 +137,17 @@ main ul li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+}
+
+.habilidades {
+    padding: 50px 0px;
+}
+
+.habilidades, .habilidades h4, .habilidades h2 {
+    color: #fff;
+    width: 100%;
+    background: var(--dark-version);
+    fill: #fff;
 }
 
 /* Estilos footer */
@@ -193,24 +213,30 @@ footer hr {
 /* Responsive */
 
 @media(max-width: 780px){
-nav {
-    position: absolute;
-    left: 60%;
-    width: 40%;
-    margin: 0px auto;
-    top: 100%;
-    z-index: 20;
-    display: none;
-    padding: 0;
-    border-radius: 0px 0px 0px 6px;
-}
-.menu {
-        display: block;
-        float: right;
-        margin: 0px 10px;
-        line-height: 50px;
-        transition: all 0.2s linear;
+    h1{
+        font-size: 24px;
     }
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+    nav {
+        position: absolute;
+        left: 0%;
+        width: 40%;
+        margin: 0px auto;
+        top: 80%;
+        z-index: 20;
+        display: none;
+        padding: 0;
+        border-radius: 0px 0px 0px 6px;
+    }
+    .menu {
+            display: block;
+            float: left;
+            margin: 0px 10px;
+            line-height: 50px;
+            transition: all 0.2s linear;
+        }
     .menu:hover {
         cursor: pointer;
     }
@@ -218,6 +244,6 @@ nav {
         display: block;
     }
     #menu_btn:checked ~ .menu {
-        color: rgba(255,255,255,0.4);
+        color: var(--dark-version);
     }
 }
