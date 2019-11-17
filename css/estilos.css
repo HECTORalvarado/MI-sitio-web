@@ -12,8 +12,11 @@
 	--color-principal: #2478a0;
 }
 
+/* parrafos */
+
 p {
 	font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 /* Particulas */
@@ -37,7 +40,7 @@ header {
 
 /* Titulos */
 
-.titulo{
+.titulo {
 	text-align: center;
 	margin: 5px 0px;
 	font-family: 'Righteous', cursive;
@@ -90,10 +93,44 @@ main {
 	margin: 0px auto;
 	margin-top: 150px;
 	clear: both;
-	height: 200px;
 }
 
-/**/
+/* estilos articles*/
+
+article {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos de los links en el main y footer */
+
+main a, footer a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-family: 'Fugaz One', cursive;
+    font-size: 17px;
+    margin: 0px 60px 0px 0px;
+}
+
+/* Estilos de listas */
+
+main ul li {
+    list-style-type: circle;
+    margin: 5px 10px;
+    text-align: left;
+}
+
+/* Estilos habilidades */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+/* Estilos footer */
 
 footer {
     text-align: center;
@@ -103,7 +140,13 @@ footer {
     z-index: 2;
 }
 
-/* Botones de Redes Sociales*/
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+/* Footer: Botones de Redes Sociales*/
 
 .redes_sociales {
     display: grid;
