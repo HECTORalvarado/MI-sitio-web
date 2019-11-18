@@ -216,7 +216,7 @@ footer hr {
     h1{
         font-size: 24px;
     }
-    .grid-3{
+    .grid-3, .grid-2{
         grid-template-columns: 1fr;
     }
     nav {
