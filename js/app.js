@@ -2,10 +2,10 @@ particlesJS(
 {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 150,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 700
       }
     },
     "color": {
@@ -69,11 +69,11 @@ particlesJS(
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
