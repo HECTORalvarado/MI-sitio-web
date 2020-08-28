@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<!-- Meta Datos -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="index, follow">
 	<meta name="description" content="Bienvenidos a mi sitio web">
+	<!-- Twitter Cards -->  
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@hector_527" />
-	<meta name="twitter:creator" content="@hector_527" />
-	<meta property="og:url"   content="https://hectoralvarado.github.io/Mi-sitio-web/" />
-	<meta property="og:type"   content="web site" />
-	<meta property="og:title"   content="Web_Héctor" />
+	<meta name="twitter:image" content="img/logo.svg" />
+	<meta name="twitter:image:alt" content="Logo del sitio web" />
+	<!-- Open Graph -->
+	<meta property="og:url" content="https://hectoralvarado.github.io/web/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Héctor Alvarado sitio web" />
 	<meta property="og:description" content="Bienvenidos a mi sitio web" />
-	<meta property="og:image"    content="img/logo.png" />
+	<meta property="og:image" content="img/logo.svg" /> 
 
 	<!-- icono -->
-	<link rel="icon" href="img/favicon.ico">
+	<link rel="icon" href="img/logo.svg">
 
 	<!-- hoja de Estilos css -->
 	<link rel="stylesheet" href="css/estilos.css">
@@ -30,7 +35,7 @@
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<title>Web Héctor</title>
+	<title>Héctor Alvarado</title>
 </head>
 <body>
 
@@ -51,28 +56,32 @@
 		<br>
 
 		<!-- Menu responsive -->
+	
 		<input type="checkbox" name="menu_btn" id="menu_btn">
-		<label for="menu_btn" class="menu">
-			<i class="fa fa-bars fa-2x"></i>
-		</label>
-
-		<!-- Menu de navegación -->
-		<nav data-aos="fade-right"
-		data-aos-duration="1000" data-aos-anchor-placement="top-center"
-		data-aos-easing="ease-in-out">
-			<a href="https://hectoralvaradoblog.blogspot.com/">
-				blog
-				<i class="fab fa-blogger-b"></i>
-			</a>
-			<a href="#proyectos">
-				Proyectos
-				<i class="fas fa-briefcase"></i>
-			</a>
-			<a href="#contacto">
-				Contacto
-				<i class="fas fa-envelope"></i>
-			</a>
-		</nav>
+		<div class="estatico">
+			<label for="menu_btn" class="menu">
+				<i class="fa fa-bars fa-2x ico-first"></i>
+				<i class="fas fa-times fa-2x ico-second"></i>
+			</label>
+			
+			<!-- Menu de navegación -->
+			<nav data-aos="fade-right"
+			data-aos-duration="1000" data-aos-anchor-placement="top-center"
+			data-aos-easing="ease-in-out">
+				<a href="https://hectoralvaradoblog.blogspot.com/">
+					blog
+					<i class="fab fa-blogger-b"></i>
+				</a>
+				<a href="#proyectos">
+					Proyectos
+					<i class="fas fa-briefcase"></i>
+				</a>
+				<a href="#contacto">
+					Contacto
+					<i class="fas fa-envelope"></i>
+				</a>
+			</nav>
+		</div>
 
 	</header>
 
@@ -81,23 +90,28 @@
 	<!-- Sección principal -->
 
 	<main>
-		<section data-aos="fade-down" data-aos-offset="20"
+		<section data-aos="fade-left" data-aos-offset="20"
 		data-aos-duration="1000"
-		data-aos-easing="ease-in-out">
-			<h2 class="titulo">Acerca de mí</h2>
+		data-aos-easing="ease-in-out" class="grid-2">
+			<div>
+				<img src="img/undraw_developer_activity_bv83.svg" loading="lazy" width="100%" alt="">
+			</div>
+			<div>
+				<h2 class="titulo">Acerca de mí</h2>
 			<p>
 				Estudiante de bachillerato tecnico vocacional opción infraestructura tecnologica y servicios informáticos en el Colegio Theodor Herzl apasionado con la tecnología, programación, robotica y diseño multimedia.
 			</p>
 			<br>
 			<p>
 				<b>valores:</b>
-					<ul>
-						<li>Paciencia</li>
-						<li>Justicia</li>
-						<li>Respeto</li>
-						<li>Honestidad</li>
-					</ul>
+				<ul>
+					<li>Paciencia</li>
+					<li>Justicia</li>
+					<li>Respeto</li>
+					<li>Honestidad</li>
+				</ul>
 			</p>
+			</div>
 		</section>
 		<br>
 
@@ -197,36 +211,36 @@
 			<h4 class="titulo">Redes Sociales</h4>
             <section class="redes_sociales">
             			
-                        <div data-aos="flip-left" data-aos-duration="1000"
-						data-aos-easing="ease-in">
-                            <a href="https://www.linkedin.com/in/héctor-alexander-alvarado" title="Linkedin" class="social">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                        <div data-aos="flip-left" data-aos-duration="1000"
-						data-aos-easing="ease-in">
-                            <a href="https://twitter.com/hector_527" title="twitter" class="social">
-                                    <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                        <div data-aos="flip-left" data-aos-duration="1000"
-						data-aos-easing="ease-in">
-                            <a href="https://www.github.com/HECTORalvarado" type="url" title="github" class="social">
-                                    <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div data-aos="flip-left" data-aos-duration="1000"
-						data-aos-easing="ease-in">
-                            <a href="https://www.instagram.com/home" title="instagram" class="social">
-                                    <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <div data-aos="flip-left" data-aos-duration="1000"
-						data-aos-easing="ease-in">
-                            <a href="https://www.youtube.com/channel/UCw4gLDY4aFLhMyp_7ES0XZ" title="youtube" class="social">
-                                    <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
+				<div data-aos="flip-left" data-aos-duration="1000"
+				data-aos-easing="ease-in">
+					<a href="https://www.linkedin.com/in/hector-alexander-alvarado" title="Linkedin" class="social">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</div>
+				<div data-aos="flip-left" data-aos-duration="1000"
+				data-aos-easing="ease-in">
+					<a href="https://twitter.com/hector_527" title="twitter" class="social">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div data-aos="flip-left" data-aos-duration="1000"
+				data-aos-easing="ease-in">
+					<a href="https://www.github.com/HECTORalvarado" type="url" title="github" class="social">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				<div data-aos="flip-left" data-aos-duration="1000"
+				data-aos-easing="ease-in">
+					<a href="https://www.instagram.com/" title="instagram" class="social">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+				<div data-aos="flip-left" data-aos-duration="1000"
+				data-aos-easing="ease-in">
+					<a href="https://www.youtube.com/channel/UCw4gLDY4aFLhMyp_7ES0XZA" title="youtube" class="social">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
             </section>
         </address>
         <hr>
