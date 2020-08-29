@@ -6,18 +6,27 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: #f9e9e9;
+}
+
 /* Variables */
 
 :root {
 	--color-principal: #2478a0;
 	--dark-version: #164d72;
 	--light-version: rgba(7, 149, 214, 0.932);
+	--titulos: 'Fugaz one', cursive;
+	--navegacion: 'Fredoka One', cursive;
+	--links: 'Oswald', cursive;
+	--parrafos: 'Voces', sans-serif;
 }
 
 /* parrafos */
 
 p {
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--parrafos);
+	font-size: 17px;
 	text-align: justify;
 }
 
@@ -48,12 +57,14 @@ header {
 .titulo {
 	text-align: center;
 	margin: 5px 0px;
-	font-family: "Righteous", cursive;
+	font-family: var(--titulos);
 	color: var(--color-principal);
 }
 
 h1 {
-	background: #fff;
+	font-family: 'Lemon', cursive !important;
+	background: #f9e9e9;
+	text-shadow: 1px 1px 1px #000;
 	display: inline-block;
 }
 
@@ -71,9 +82,6 @@ h1 {
 }
 
 /* Menu navegación */
-nav {
-	display: inline-block;
-}
 
 #menu_btn,
 .menu > .ico-second {
@@ -82,18 +90,53 @@ nav {
 }
 
 .menu {
-	color: var(--light-version);
+	color: #FFF;
 	display: none;
+	padding: 7.5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	background: var(--color-principal);
 }
 
-nav a {
+.estatico {
+	top: 0;
+	left: 0;
+}
+
+nav ul, nav ul li {
 	display: inline-block;
+	list-style: none;
+}
+
+nav ul li a {
+	position: relative;
 	text-decoration: none;
 	color: var(--color-principal);
-	font-family: "Fugaz One", cursive;
+	font-family: var(--navegacion);
 	font-size: 20px;
 	margin: 0px 60px 0px 0px;
+	padding: 5px;
 	transition: all 0.5s;
+}
+
+nav ul li a::before{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background: var(--color-principal);
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: all ease-in-out .7s;
+}
+
+nav ul li a:hover::before{
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 nav a:hover {
@@ -125,9 +168,7 @@ main a,
 footer a {
 	text-decoration: none;
 	color: var(--color-principal);
-	font-weight: lighter;
-	font-family: "Fugaz One", cursive;
-	font-size: 17px;
+	font-family: var(--links);
 	margin: 0px 60px 0px 0px;
 }
 
@@ -149,6 +190,7 @@ main ul li {
 
 .habilidades {
 	padding: 50px 0px;
+	box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.7);
 }
 
 .habilidades,
@@ -189,21 +231,21 @@ footer {
 .social {
 	display: block;
 	width: 50px;
+	position: relative;
 	height: 50px;
 	background: #f1f1f1;
 	border-radius: 25%;
 	color: var(--color-principal);
-	line-height: 50px;
-	font-size: 26px;
+	line-height: 45px;
+	font-size: 30px;
 	box-shadow: 0 5px 15px -5px #000020;
 	margin: 0px auto;
-}
-
-.social {
-	transition: 0.2s linear;
+	transform-origin: top;
+	transition: all 0.4s linear;
 }
 
 .social:hover {
+	transform-origin: bottom;
 	transform: scale(1.1);
 	color: #f1f1f1;
 	background: var(--color-principal);
@@ -232,18 +274,21 @@ footer hr {
 	}
 	.estatico {
 		position: fixed;
-		padding: 1.2em;
+		padding: 3em 1.2em;
 	}
-	nav {
+	nav ul li {
+		display: block;
+		padding: 5px;
+	}
+	nav ul {
 		position: absolute;
-		left: 7%;
-		width: 50%;
-		margin: 0px auto;
+		left: 0%;
+		width: 100%;
+		margin: 60px auto;
 		top: 10%;
 		z-index: 10;
 		display: none;
-		padding: 0;
-		border-radius: 0px 0px 0px 6px;
+		padding: 0px;
 	}
 	.menu {
 		display: block;
@@ -255,21 +300,18 @@ footer hr {
 	.menu:hover {
 		cursor: pointer;
 	}
-	#menu_btn:checked ~ .estatico > nav {
+	#menu_btn:checked ~ .estatico > nav ul {
 		display: block;
 	}
 	#menu_btn:checked ~ .estatico {
 		background: rgba(255, 255, 255, 0.7);
 		height: 100vh;
 		width: 100vw;
-		top: 0;
-		left: 0;
 	}
 	#menu_btn:checked ~ .estatico > .menu > .ico-first {
 		display: none;
 	}
 	#menu_btn:checked ~ .estatico > .menu > .ico-second {
 		display: block;
-		color: var(--color-principal);
 	}
 }

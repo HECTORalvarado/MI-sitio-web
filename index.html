@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="css/estilos.css">
 
 	<!-- Fuentes -->
-	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans|Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fugaz+One&family=Lemon&family=Oswald:wght@400;600&family=Voces&display=swap" rel="stylesheet"> 
 
 	<!-- Animate.css --> 
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
@@ -38,6 +38,8 @@
 	<title>Héctor Alvarado</title>
 </head>
 <body>
+	<!-- Contenedor de las particulas -->
+	<div id="particles-js"></div>
 
 	<!-- Header -->
 	<header>
@@ -68,25 +70,31 @@
 			<nav data-aos="fade-right"
 			data-aos-duration="1000" data-aos-anchor-placement="top-center"
 			data-aos-easing="ease-in-out">
-				<a href="https://hectoralvaradoblog.blogspot.com/">
-					blog
-					<i class="fab fa-blogger-b"></i>
-				</a>
-				<a href="#proyectos">
-					Proyectos
-					<i class="fas fa-briefcase"></i>
-				</a>
-				<a href="#contacto">
-					Contacto
-					<i class="fas fa-envelope"></i>
-				</a>
+				<ul>
+					<li>
+						<a href="https://hectoralvaradoblog.blogspot.com/">
+							blog
+							<i class="fab fa-blogger-b"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#proyectos">
+							Proyectos
+							<i class="fas fa-briefcase"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#contacto">
+							Contacto
+							<i class="fas fa-envelope"></i>
+						</a>
+					</li>
+				</ul>
 			</nav>
 		</div>
 
 	</header>
 
-	<!-- Contenedor de las particulas -->
-	<div id="particles-js"></div>
 	<!-- Sección principal -->
 
 	<main>
@@ -94,7 +102,7 @@
 		data-aos-duration="1000"
 		data-aos-easing="ease-in-out" class="grid-2">
 			<div>
-				<img src="img/undraw_developer_activity_bv83.svg" loading="lazy" width="100%" alt="">
+				<img src="img/undraw_developer_activity_bv83.svg" loading="lazy" width="100%" alt="Programador">
 			</div>
 			<div>
 				<h2 class="titulo">Acerca de mí</h2>
@@ -103,7 +111,7 @@
 			</p>
 			<br>
 			<p>
-				<b>valores:</b>
+				<b>Valores:</b>
 				<ul>
 					<li>Paciencia</li>
 					<li>Justicia</li>
@@ -177,7 +185,7 @@
 					<h3 class="titulo">Robot aspiradora</h3>
 					<img src="img/robot_aspirador.jpg" height="120px" loading="lazy" alt="imagen_robot">
 					<p>
-						Proyecto realizado para la expo herzl 2017 para realizarlo se utilizo un arduino UNO, el controlador de motores L298n, Sensor ultrasonico hcsr04, 4 motores dc de los cuales dos son los encargados de aspirar.
+						Proyecto realizado para la expo herzl 2017 para realizarlo se utilizo un arduino UNO, el controlador de motores L298n, Sensor ultrasonico hcsr04, 4 motores dc; de los cuales dos son los encargados de aspirar.
 					</p>
 				</div>
 			</div>
@@ -200,7 +208,7 @@
 				</div>
 				<div>
 					<span>
-						<b>e-mail:</b> hectoralexanderalvarado@gmail.com
+						<b>e-mail:</b> <a href="mailto:hectoralexanderalvarado@gmail.com">hectoralexanderalvarado@gmail.com </a>
 					</span>
 				</div>
             </div>
@@ -247,8 +255,8 @@
 
         <!-- Crditos a creadores de iconos -->
 		<h4 class="titulo">Recuros</h4>
-        iconos usados<a href="https://iconscout.com/icon/arduino-5" target="_blank">Arduino Icon</a> by<a href="https://iconscout.com/contributors/icons8" target="_blank">Icons8</a>
-        and<a href="https://fontawesome.com/">Fontawesome</a>
+        iconos usados <a href="https://iconscout.com/icon/arduino-5" target="_blank">Arduino Icon</a>by <a href="https://iconscout.com/contributors/icons8" target="_blank">Icons8</a>
+        and <a href="https://fontawesome.com/">Fontawesome</a>
         <hr>
         <small>
             <span class="autor">| Héctor Alvarado. |</span>
@@ -265,6 +273,7 @@
 
 	<!-- Animate on scroll JS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
 	<!-- Inicialización de la libreria -->
 	<script>
 		AOS.init();
