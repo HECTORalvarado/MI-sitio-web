@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hectoralvarado.github.io/web/sitemap.xml

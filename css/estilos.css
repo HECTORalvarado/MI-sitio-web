@@ -1,18 +1,7 @@
-/* Reset */
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background: #f9e9e9;
-}
-
 /* Variables */
 
 :root {
+	--color-fondo: #f7f7f7;
 	--color-principal: #2478a0;
 	--dark-version: #164d72;
 	--light-version: rgba(7, 149, 214, 0.932);
@@ -20,6 +9,12 @@ body {
 	--navegacion: 'Fredoka One', cursive;
 	--links: 'Oswald', cursive;
 	--parrafos: 'Voces', sans-serif;
+}
+
+/* Fondo */
+
+body {
+	background: var(--color-fondo);
 }
 
 /* parrafos */
@@ -63,7 +58,7 @@ header {
 
 h1 {
 	font-family: 'Lemon', cursive !important;
-	background: #f9e9e9;
+	background: var(--color-fondo);
 	text-shadow: 1px 1px 1px #000;
 	display: inline-block;
 }
