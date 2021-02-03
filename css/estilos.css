@@ -16,6 +16,7 @@
 
 body {
 	background: var(--color-fondo);
+	transition: all .65s ease-in-out;
 }
 
 /* parrafos */
@@ -52,6 +53,7 @@ header {
 .titulo {
 	text-align: center;
 	margin: 5px 0px;
+	letter-spacing: 0.5px;
 	font-family: var(--titulos);
 	color: var(--color-principal);
 }
@@ -121,6 +123,7 @@ nav ul li a {
 	color: var(--color-principal);
 	font-family: var(--navegacion);
 	font-size: 20px;
+	text-transform: capitalize;
 	margin: 0px 40px 0px 0px;
 	padding: 5px;
 	transition: all 0.5s;
@@ -145,7 +148,6 @@ nav ul li a:hover::before{
 }
 
 nav a:hover {
-	color: var(--dark-version);
 	transform: scale(1.1);
 }
 
@@ -162,8 +164,8 @@ nav a:hover {
 .switch::after {
 	content: '';
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 31px;
+	height: 31px;
 	position: absolute;
 	background: var(--color-fondo);
 	top: 0;
@@ -206,6 +208,21 @@ section {
 	text-align: center;
 }
 
+#proyectos div a {
+	margin: auto;
+	transition: all .3s ease;
+}
+
+#proyectos div a img {
+	height: 150px;
+	width: auto;
+}
+
+#proyectos .grid-3 > div {
+	padding: 10px;
+	margin-bottom: 2em;
+}
+
 /* Estilos de los links en el main y footer */
 
 main a,
@@ -214,6 +231,14 @@ footer a {
 	color: var(--color-principal);
 	font-family: var(--links);
 	margin: 0px 60px 0px 0px;
+}
+
+main a:hover{
+	color: var(--dark-version);
+}
+
+footer a:hover {
+	color: var(--light-version);
 }
 
 /* Estilos de listas */
@@ -229,7 +254,7 @@ main ul li {
 .grid-3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 50px;
+	grid-gap: 30px;
 }
 
 .habilidades {
@@ -366,4 +391,12 @@ footer hr {
 .dark {
 	background: var(--color-dark);
 	color: var(--color-fondo);
+}
+
+.dark nav a {
+	color: var(--light-version);
+}
+
+.dark main a:hover {
+	color: var(--light-version);
 }
