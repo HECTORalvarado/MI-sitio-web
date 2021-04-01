@@ -12,11 +12,22 @@
 	--parrafos: 'Voces', sans-serif;
 }
 
-/* Fondo */
+/* Estilos Generales */
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	background: var(--color-fondo);
 	transition: all .65s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+	width: .75em;
+	border-radius: 7px;
+	border-right: 2px;
+	background: var(--color-principal);
 }
 
 /* parrafos */
@@ -25,6 +36,7 @@ p {
 	font-family: var(--parrafos);
 	font-size: 17px;
 	text-align: justify;
+	line-height: 1.5;
 }
 
 /* Particulas */
@@ -123,6 +135,7 @@ nav ul li a {
 	color: var(--color-principal);
 	font-family: var(--navegacion);
 	font-size: 20px;
+	line-height: 1.5;
 	text-transform: capitalize;
 	margin: 0px 40px 0px 0px;
 	padding: 5px;
@@ -214,8 +227,13 @@ section {
 }
 
 #proyectos div a img {
-	height: 150px;
+	height: 9rem;
 	width: auto;
+	max-width: 100%;
+}
+
+#proyectos p {
+	text-align: justify;
 }
 
 #proyectos .grid-3 > div {
