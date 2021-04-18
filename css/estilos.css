@@ -417,6 +417,10 @@ footer hr {
 	color: var(--light-version);
 }
 
+.dark p {
+	color: var(--color-fondo);
+}
+
 .dark main a:hover {
 	color: var(--light-version);
 }
